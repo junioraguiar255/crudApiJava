@@ -93,5 +93,11 @@ public class TaskController {
         return taskService.deleteById(id);
     }
 
+    @RequestMapping("/")
+    @ResponseBody
+    String home() {
+        return "Bem vindo na minha aplicação!";
+    }
+
 
 }
